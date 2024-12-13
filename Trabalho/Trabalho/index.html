@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche-Tudo</title>
+
+    <link href="https://fonts.googleapis,com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility" />
+    
+    <link rel="stylesheet" href="estilo.css">
+
+    <script src="eventos.js" defer></script>
+</head>
+<body>
+
+    <p class="titulo">Tela de Cadastro do Cliente Lanche-Tudo</p>
+
+    <main class="flex">
+        <form action="server.php" method="post">
+
+            <div class="grupo">
+                <label for="username">Nome de Usuário: </label>
+                <input type="text" id="username" class="controle" name="username">
+            </div>
+
+            <div class="grupo">
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="nome" class="controle" name="nome">
+            </div>
+
+            <div class="grupo">
+                <label for="data">Data de Nascimento: </label>
+                <input type="date" id="data" class="controle" name="data">
+            </div>
+
+            <div class="grupo">
+                <label for="cpf">CPF (apenas números): </label>
+                <input type="number" id="cpf" class="controle" name="cpf">
+            </div>
+                
+            <div class="grupo">
+                <label for="telefone">Número de Telefone: </label>
+                <input type="tel" id="telefone" class="controle" name="telefone">
+            </div>
+
+            <div class="grupo">
+                <label for="imagem">Selecione sua imagem de Perfil: </label>
+                <input type="image" id="imagem" class="controle" name="imagem">
+            </div>
+
+            <p>Informe seu Gênero:</p>
+            <div>
+                <input type="radio" id="genero1" name="genero" value="MASC">
+                <label for="genero1">Masculino</label><br>
+            </div>
+    
+            <div>
+                <input type="radio" id="genero2" name="genero" value="FEM">
+                <label for="genero2">Feminino</label><br>
+            </div>
+    
+            <div>
+                <input type="radio" id="genero3" name="genero" value="NB">
+                <label for="genero3">Não-binário</label><br>
+            </div>
+    
+            <div>
+                <input type="radio" id="genero4" name="genero" value="PNI">
+                <label for="genero4">Prefiro não informar</label><br>
+            </div>
+
+            <div class="grupo">
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" class="controle" name="email">
+            </div class="grupo">
+
+            <div class="grupo">
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" class="controle" name="senha">
+                <span class="material-symbols-outlined" id="olhinho">
+                    visibility
+                </span>            
+            </div>   
+
+            <p> Lanches favoritos: </p>
+            <div>
+                <input type="checkbox" id="burger" name="lanche" value="burger">
+                <label for="burger">Hambúrguer</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="hotdog" name="lanche" value="hotdog">
+                <label for="hotdog">Cachorro-quente</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="acai" name="lanche" value="acai">
+                <label for="acai">Açaí</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="pizza" name="lanche" value="pizza">
+                <label for="pizza">Pizza</label><br>
+            </div>
+
+            <div class="grupo">
+                <input type="submit" value="Logar" class="btn">
+            </div> 
+
+            <div class="grupo">
+            <input type="reset" id="reset" class="controle" name="reset">
+            </div>
+            
+        </form>
+
+    </main>
+    
+    <footer class="rodape">
+        
+        <p>IFRN - Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>José Neilson Santos de Lima e Layra Wallyda Lino Santos</p>
+        
+    </footer>
+</body>
+</html>
